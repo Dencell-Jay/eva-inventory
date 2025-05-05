@@ -20,6 +20,25 @@
         
     }
 
+    if ($username && $password) {
+        $tableSelect = mysqli_prepare($connections, $query);
+        mysqli_stmt_bind_param($tableSelect, "s", $username);
+        mysqli_stmt_execute($tableSelect);
+        mysqli_stmt_bind_result($tableSelect, $password_hash);
+
+        if (mysqli_stmt_fetch($tableSelect)) {
+            if (password_verify($password, $password_hash)) {
+                echo "<script>window.location.href='files/inventory.php';</script>";
+            } else {
+                $error = "Wrong password!";
+            }
+        } else {
+            $error = "Username not found!";
+        }
+        
+        mysqli_stmt_close($tableSelect);
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -92,7 +111,7 @@
             <?php endif; ?>
 
             <!-- Login system -->
-            <form action="<?php htmlspecialchars($_SERVER['PHP_SELF'])?>" method="post">
+            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>" method="post">
                 <div class="d-flex align-items-center gap-2 mb-3">
                     <i class="bi bi-person-fill"></i>
                     <input type="text" class="form-control" placeholder="Enter Username" name="username" value="<?php echo $username?>">
