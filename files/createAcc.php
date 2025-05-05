@@ -20,6 +20,23 @@
         
     }
 
+    if ($username && $password) {
+        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+        $insertTable = mysqli_prepare($connections, $query);
+        mysqli_stmt_bind_param($insertTable, "ss", $username, $hashed_password);
+
+        if (mysqli_stmt_execute($insertTable)) {
+            echo "<script language='javascript'>alert('INSERTED SUCCESSFULLY!');</script>";
+            echo "<script>window.location.href='../index.php';</script>";
+            exit();
+        } else {
+            $error = "Error: " . mysqli_error($connections);
+        }
+        
+        mysqli_stmt_close($insertTable);
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -79,25 +96,6 @@
                 <button type="submit" class="btn btn-warning w-100 fw-bold"><i class="bi bi-door-open-fill"></i> CREATE ACC</button>
 
             </form>
-
-            <?php 
-                if ($username && $password) {
-                    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-            
-                    $insertTable = mysqli_prepare($connections, $query);
-                    mysqli_stmt_bind_param($insertTable, "ss", $username, $hashed_password);
-            
-                    if (mysqli_stmt_execute($insertTable)) {
-                        echo "<script language='javascript'>alert('INSERTED SUCCESSFULLY!');</script>";
-                        echo "<script>window.location.href='../index.php';</script>";
-                        exit();
-                    } else {
-                        $error = "Error: " . mysqli_error($connections);
-                    }
-                    
-                    mysqli_stmt_close($insertTable);
-                }
-            ?>
             
         </div>
 
