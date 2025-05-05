@@ -1,3 +1,27 @@
+<?php 
+    include("files/connections.php");
+
+    $username = $password = $error = "";
+
+    $query = "SELECT password FROM Staff WHERE username = ?";
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if (empty($_POST["username"])) {
+            $error = "Username empty!";
+        } else{
+            $username = $_POST["username"];
+        }
+
+        if (empty($_POST["password"])) {
+            $error = "Password empty!";
+        } else {
+            $password = $_POST["password"];
+        }
+        
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +50,8 @@
     .separator{
         background-color: rgba(128, 128, 128, 0.5);
         width: 3px;
-        height: 300px;
+        height: 400px;
+        margin-top: -1%;
     }
 </style>
 </head>
@@ -47,7 +72,7 @@
         <div class="mx-2 separator"></div>
 
         <!-- Login part -->
-        <div class="">
+        <div style="margin-top: -4%;">
             <!-- Title -->
             <div class="d-flex align-items-center gap-2"> 
                 <img src="images/cvsulogo.png" alt="CVSU LOGO" width="110" height="110" style="top: -8px; position: relative;">
@@ -56,17 +81,37 @@
 
             <br>
 
-            <!-- Greet -->
+            <!-- Greet & Error -->
             <h2 class="fw-bold">Hi, Welcome Back!</h2>
             <p class="text-secondary">Enter your admin credentials</p>
 
+            <?php if (!empty($error)): ?>
+                <div class="card rounded mb-3" id="errorMsg" style="background-color: rgba(210, 80, 80, 0.5);">
+                    <p class="m-0 p-2"><?php echo $error?></p>
+                </div>
+            <?php endif; ?>
+
             <!-- Login system -->
-            <div class="card rounded py-2" id="errorMsg" style="background-color: rgba(210, 80, 80, 0.5);">
-                <p class="m-0">Error Message Here!</p>
+            <form action="<?php htmlspecialchars($_SERVER['PHP_SELF'])?>" method="post">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                    <i class="bi bi-person-fill"></i>
+                    <input type="text" class="form-control" placeholder="Enter Username" name="username" value="<?php echo $username?>">
+                </div>
+
+                <div class="d-flex align-items-center gap-2 mb-3">
+                    <i class="bi bi-lock-fill"></i>
+                    <input type="password" class="form-control" placeholder="Enter Password" name="password" value="<?php echo $password?>">
+                </div>
+
+                <button type="submit" class="btn btn-warning w-100 fw-bold"><i class="bi bi-door-open-fill"></i> LOGIN</button>
+
+            </form>
+            <hr>
+            
+            <div class="text-center">
+                <a href="#" class="text-decoration-none text-danger">Forgot Password</a>
             </div>
-
-            <form action="" method="post"></form>
-
+            
         </div>
     </div>
 
