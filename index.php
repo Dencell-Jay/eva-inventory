@@ -105,8 +105,8 @@
             <p class="text-secondary">Enter your admin credentials</p>
 
             <?php if (!empty($error)): ?>
-                <div class="card rounded mb-3" id="errorMsg" style="background-color: rgba(210, 80, 80, 0.5);">
-                    <p class="m-0 p-2"><?php echo $error?></p>
+                <div class="card rounded mb-3 alert alert-danger" id="errorMsg">
+                    <p class="m-0"><?php echo $error?></p>
                 </div>
             <?php endif; ?>
 
