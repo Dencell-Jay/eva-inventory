@@ -13,14 +13,14 @@
 
 <style>
     .sidebar.collapse{
-        width: 60px;
+        width: 75px;
     }
 
     .sidebar {
         width: 15%;
         transition: width 0.3s;
     }
-
+    
     .sidebar .cvsu-logo{
         display: block;
         width: 110px;
@@ -33,17 +33,17 @@
         height: 40px;
     }
 
-    .sidebar .btn span, .sidebar h5 {
-        transition: opacity 0.3s;
+    .sidebar .btn span, .sidebar h5{
+        transition: display 0.3s;
     }
 
     .sidebar.collapse .btn span, .sidebar.collapse h5 {
-        opacity: 0;
+        display: none;
         pointer-events: none;
         height: 0;
         overflow: hidden;
     }
-    
+
 </style>
 </head>
 <body class="d-flex">
@@ -55,47 +55,47 @@
             <h5 class="text-success text-center"><span>External &<br> Business<br> Affairs<br></span></h5>
             <div class="bg-black w-100 mt-2 mb-3 align-self-center" style="height: 2px;"></div>
 
-            <a href="#" class="btn btn-warning w-100 text-start pe-5 mb-2">
+            <a href="#" class="btn btn-warning w-100 text-start pe-4 mb-2 disabled opacity-100">
                 <i class="bi bi-grid-1x2-fill me-2"></i><span>Dashboard</span>
             </a>
         
-            <a href="#" class="btn w-100 text-start pe-5 mb-2">
+            <a href="customer.php" class="btn w-100 text-start pe-4 mb-2">
                 <i class="bi bi-people me-2"></i><span>Customer</span>
             </a>
         
-            <a href="#" class="btn w-100 text-start pe-5 mb-2">
+            <a href="#" class="btn w-100 text-start pe-4 mb-2">
                 <i class="bi bi-cart2 me-2"></i><span>Orders</span>
             </a>
         
-            <a href="#" class="btn w-100 text-start pe-5 mb-2">
+            <a href="#" class="btn w-100 text-start pe-4 mb-2">
                 <i class="bi bi-truck me-2"></i><span>Providers</span>
             </a>
         
-            <a href="#" class="btn w-100 text-start pe-5 mb-2">
+            <a href="#" class="btn w-100 text-start pe-4 mb-2">
                 <i class="bi bi-bag me-2"></i><span>Sales</span>
             </a>
         
-            <a href="#" class="btn w-100 text-start pe-5 mb-2">
+            <a href="#" class="btn w-100 text-start pe-4 mb-2">
                 <i class="bi bi-box-seam me-2"></i><span>Inventory</span>
             </a>
         
-            <a href="#" class="btn w-100 text-start pe-5 mb-2">
+            <a href="#" class="btn w-100 text-start pe-4 mb-2">
                 <i class="bi bi-grid me-2"></i><span>Category</span>
             </a>
 
-            <a href="#" class="btn w-100 text-start pe-5 mb-2">
+            <a href="#" class="btn w-100 text-start pe-4 mb-2">
                 <i class="bi bi-gear me-2"></i><span>Setting</span>
             </a>
             
-            <a href="#" class="btn w-100 text-start pe-5 mb-4 mt-auto">
+            <a href="#" class="btn w-100 text-start pe-4 mb-4 mt-auto">
                 <i class="bi bi-box-arrow-right me-2"></i><span>Logout</span>
             </a>
 
-
     </div>
     
+    <!-- Content here -->
     <div class="flex-grow-1">
-
+        
     </div>
 
     <script>
