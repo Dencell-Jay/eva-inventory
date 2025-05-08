@@ -46,7 +46,7 @@
 
 </style>
 </head>
-<body class="d-flex">
+<body class="d-flex bg-light">
     <!-- navbar -->
     <div id="sidebar" class="sidebar d-flex flex-column px-3 border-end position-relative min-vh-100">
         <i id="toggleButton" class="bi bi-chevron-double-left align-self-end position-absolute top-0 end-0 h4" role="button"></i>
@@ -95,15 +95,25 @@
     
     <!-- Content here -->
     <div class="flex-grow-1 mx-3">
-        <div class="mt-3 d-flex justify-content-between">
+        <div class="mt-3 mb-2 d-flex justify-content-between">
             <h5 class="fw-normal">Dashboard <span class="text-secondary ms-1">/</span></h5>
-            <div class="card rounded bg-black text-white px-3 py-2"><span>May 8, 2025 | <b>1:44PM</b></span></div>
+            <div class="card rounded small bg-black text-white px-3 py-2"><span>May 8, 2025 | <b>1:44PM</b></span></div>
         </div>
-        
-        <br>
 
         <h1 class="fw-bold">WELCOME <span class="text-success">ADMIN</span>!</h1>
         <h5 class="text-secondary">Truth • Excellence • Service</h5>
+        <div class="d-flex justify-content-between">
+            <p>Daily Updates</p>
+            <p class="text-secondary">Refresh Data: <i class="bi bi-arrow-repeat btn" role="button"></i></p>
+        </div>
+        
+        <div class="d-flex">
+            <div class="card rounded p">
+                <h5>₱800</h5>
+                <p>Total Daily sales</p>
+            </div>
+
+        </div>
 
     </div>
 

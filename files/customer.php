@@ -46,7 +46,7 @@
 
 </style>
 </head>
-<body class="d-flex">
+<body class="d-flex bg-light">
     <!-- navbar -->
     <div id="sidebar" class="sidebar d-flex flex-column px-3 border-end position-relative min-vh-100">
         <i id="toggleButton" class="bi bi-chevron-double-left align-self-end position-absolute top-0 end-0 h4" role="button"></i>
