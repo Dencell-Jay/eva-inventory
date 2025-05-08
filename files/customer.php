@@ -94,8 +94,38 @@
     </div>
     
     <!-- Content here -->
-    <div class="flex-grow-1 ms-3">
+    <div class="flex-grow-1 mx-3">
         <h5 class="fw-normal mt-3">Customer <span class="text-secondary ms-1">/</span></h5>        
+
+        <br>
+
+        <!-- Cards -->
+        <div class="d-flex gap-3">
+            <div class="card rounded px-5 pt-5 w-100 position-relative">
+                <i class="bi bi-bag align-self-end position-absolute top-0 end-0 h5 mx-3 mt-2 p-1 bg-secondary-subtle rounded"></i> 
+                <div class="text-center text-secondary">
+                    <h3>₱ <span class="text-success">800</span><span class="h6">.00</span></h3>
+                    <p>Total Daily sales</p>
+                </div>
+            </div>
+
+            <div class="card rounded px-5 pt-5 w-100">
+                <i class="bi bi-people align-self-end position-absolute top-0 end-0 h5 mx-3 mt-2 p-1 bg-secondary-subtle rounded"></i> 
+                <div class="text-center text-secondary">
+                    <h3 class="text-success">32</h3>
+                    <p>Total Daily sales</p>
+                </div>
+            </div>
+
+
+            <div class="card rounded px-5 pt-5 w-100 bg-success bg-gradient">
+                <div class="text-center text-white">
+                    <h3 class="">320</h3>
+                    <p>Monthly New Customers</p>
+                </div>
+            </div>
+
+        </div>
 
     </div>
 

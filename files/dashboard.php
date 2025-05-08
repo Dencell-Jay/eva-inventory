@@ -107,17 +107,51 @@
             <p class="text-secondary">Refresh Data: <i class="bi bi-arrow-repeat btn" role="button"></i></p>
         </div>
         
-        <div class="d-flex">
-            <div class="card rounded p">
-                <h5>₱800</h5>
-                <p>Total Daily sales</p>
+        <!-- Cards -->
+        <div class="d-flex gap-3">
+            <div class="card rounded px-5 pt-5 w-100 position-relative">
+                <i class="bi bi-bag align-self-end position-absolute top-0 end-0 h5 mx-3 mt-2 p-1 bg-secondary-subtle rounded"></i> 
+                <div class="text-center text-secondary">
+                    <h3>₱ <span class="text-success">800</span><span class="h6">.00</span></h3>
+                    <p>Total Daily sales</p>
+                </div>
             </div>
 
+            <div class="card rounded px-5 pt-5 w-100">
+                <i class="bi bi-people align-self-end position-absolute top-0 end-0 h5 mx-3 mt-2 p-1 bg-secondary-subtle rounded"></i> 
+                <div class="text-center text-secondary">
+                    <h3 class="text-success">32</h3>
+                    <p>Total Daily sales</p>
+                </div>
+            </div>
+
+
+            <div class="card rounded px-5 pt-5 w-100">
+                <i class="bi bi-cart align-self-end position-absolute top-0 end-0 h5 mx-3 mt-2 p-1 bg-secondary-subtle rounded"></i> 
+                <div class="text-center text-secondary">
+                    <h3 class="text-success">5</h3>
+                    <p>Incoming Orders</p>
+                </div>
+            </div>
+
+
+            <div class="card rounded px-5 pt-5 w-100">
+                <i class="bi bi-box-seam align-self-end position-absolute top-0 end-0 h5 mx-3 mt-2 p-1 bg-secondary-subtle rounded"></i> 
+                <div class="text-center text-secondary">
+                    <h3 class="text-danger">32</h3>
+                    <p>Product/s Low on Stock</p>
+                </div>
+            </div>
         </div>
+
+        <hr>
+
+        <!-- Graph -->
 
     </div>
 
     <script>
+        // Sidebar state saving
         const sidebar = document.getElementById("sidebar");
         const toggleBtn = document.getElementById("toggleButton");
 

@@ -94,7 +94,7 @@
     </div>
     
     <!-- Content here -->
-    <div class="flex-grow-1 ms-3">
+    <div class="flex-grow-1 mx-3">
         <h5 class="fw-normal mt-3">Inventory <span class="text-secondary ms-1">/</span></h5>        
 
     </div>
