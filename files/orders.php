@@ -59,12 +59,12 @@
                 <i class="bi bi-grid-1x2 me-2"></i><span>Dashboard</span>
             </a>
         
-            <a href="#" class="btn w-100 text-start pe-4 mb-2 disabled opacity-100 btn-warning">
-                <i class="bi bi-people-fill me-2"></i><span>Customer</span>
+            <a href="customer.php" class="btn w-100 text-start pe-4 mb-2">
+                <i class="bi bi-people me-2"></i><span>Customer</span>
             </a>
         
-            <a href="orders.php" class="btn w-100 text-start pe-4 mb-2">
-                <i class="bi bi-cart2 me-2"></i><span>Orders</span>
+            <a href="#" class="btn w-100 text-start pe-4 mb-2 disabled opacity-100 btn-warning">
+                <i class="bi bi-cart-fill me-2"></i><span>Orders</span>
             </a>
         
             <a href="providers.php" class="btn w-100 text-start pe-4 mb-2">
@@ -95,7 +95,7 @@
     
     <!-- Content here -->
     <div class="flex-grow-1 ms-3">
-        <h5 class="fw-normal mt-3">Customer <span class="text-secondary ms-1">/</span></h5>        
+        <h5 class="fw-normal mt-3">Orders <span class="text-secondary ms-1">/</span></h5>        
 
     </div>
 
