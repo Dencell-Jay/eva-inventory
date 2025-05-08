@@ -87,7 +87,7 @@
                 <i class="bi bi-gear me-2"></i><span>Setting</span>
             </a>
             
-            <a href="#" class="btn w-100 text-start pe-4 mb-4 mt-auto">
+            <a href="../index.php" class="btn w-100 text-start pe-4 mb-4 mt-auto">
                 <i class="bi bi-box-arrow-right me-2"></i><span>Logout</span>
             </a>
 

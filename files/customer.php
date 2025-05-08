@@ -55,7 +55,7 @@
             <h5 class="text-success text-center"><span>External &<br> Business<br> Affairs<br></span></h5>
             <div class="bg-black w-100 mt-2 mb-3 align-self-center" style="height: 2px;"></div>
 
-            <a href="main.php" class="btn w-100 text-start pe-4 mb-2">
+            <a href="dashboard.php" class="btn w-100 text-start pe-4 mb-2">
                 <i class="bi bi-grid-1x2 me-2"></i><span>Dashboard</span>
             </a>
         
@@ -87,7 +87,7 @@
                 <i class="bi bi-gear me-2"></i><span>Setting</span>
             </a>
             
-            <a href="#" class="btn w-100 text-start pe-4 mb-4 mt-auto">
+            <a href="../index.php" class="btn w-100 text-start pe-4 mb-4 mt-auto">
                 <i class="bi bi-box-arrow-right me-2"></i><span>Logout</span>
             </a>
 

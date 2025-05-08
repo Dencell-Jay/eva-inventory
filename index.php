@@ -28,7 +28,7 @@
 
         if (mysqli_stmt_fetch($tableSelect)) {
             if (password_verify($password, $password_hash)) {
-                echo "<script>window.location.href='files/main.php';</script>";
+                echo "<script>window.location.href='files/dashboard.php';</script>";
             } else {
                 $error = "Wrong password!";
             }
