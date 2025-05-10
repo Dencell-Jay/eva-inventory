@@ -101,24 +101,39 @@
 
         <!-- Cards -->
         <div class="d-flex gap-3">
-            <div class="card rounded px-5 pt-5 w-100 position-relative">
-                <i class="bi bi-bag align-self-end position-absolute top-0 end-0 h5 mx-3 mt-2 p-1 bg-secondary-subtle rounded"></i> 
-                <div class="text-center text-secondary">
-                    <h3>₱ <span class="text-success">800</span><span class="h6">.00</span></h3>
-                    <p>Total Daily sales</p>
-                </div>
-            </div>
-
-            <div class="card rounded px-5 pt-5 w-100">
+            <div class="card rounded px-5 pb-3 pt-2 w-50 position-relative">
+                <h6 class="position-absolute top-0 start-0 mx-3 mt-2 fw-bold">Total Customers</h6>
                 <i class="bi bi-people align-self-end position-absolute top-0 end-0 h5 mx-3 mt-2 p-1 bg-secondary-subtle rounded"></i> 
-                <div class="text-center text-secondary">
-                    <h3 class="text-success">32</h3>
-                    <p>Total Daily sales</p>
+                <h1 class="text-success text-center mt-4 pt-3">1280</h1>
+                
+                <div class="position-absolute bottom-0 start-0 w-100 bg-success" style="height: 8px; border-bottom-left-radius: 0.5rem; border-bottom-right-radius: 0.5rem;"></div>
+            </div>
+
+            <div class="card rounded px-5 pt-5 w-100"> 
+                <h6 class="position-absolute top-0 start-0 mx-3 mt-2 fw-bold">Customer Summary</h6>
+                <div class="d-flex justify-content-between gap-3">
+                    <div class="text-center text-secondary">
+                        <h3 class="text-black">32</h3>
+                        <p>Students</p>
+                    </div>
+                    <div class="vr h-75" style="width: 2px;"></div>
+
+                    <div class="text-center text-secondary">
+                        <h3 class="text-black">32</h3>
+                        <p>Faculty</p>
+                    </div>
+
+                    <div class="vr h-75" style="width: 2px;"></div>
+
+                    <div class="text-center text-secondary">
+                        <h3 class="text-black">70</h3>
+                        <p>Others</p>
+                    </div>
                 </div>
             </div>
 
 
-            <div class="card rounded px-5 pt-5 w-100 bg-success bg-gradient">
+            <div class="card rounded px-5 pt-5 w-50 bg-success bg-gradient">
                 <div class="text-center text-white">
                     <h3 class="">320</h3>
                     <p>Monthly New Customers</p>
