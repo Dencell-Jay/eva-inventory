@@ -46,9 +46,9 @@
 
 </style>
 </head>
-<body class="d-flex bg-light">
+<body class="d-lg-flex bg-light">
     <!-- navbar -->
-    <div id="sidebar" class="sidebar d-flex flex-column px-3 border-end position-relative min-vh-100">
+    <div id="sidebar" class="sidebar d-lg-flex flex-column px-3 border-end position-relative min-vh-100 d-none">
         <i id="toggleButton" class="bi bi-chevron-double-left align-self-end position-absolute top-0 end-0 h4" role="button"></i>
 
         <img src="../images/cvsulogo.png" alt="CVSU LOGO" class="align-self-center mb-2 mt-4 cvsu-logo">
@@ -58,17 +58,9 @@
             <a href="#" class="btn btn-warning w-100 text-start pe-4 mb-2 disabled opacity-100">
                 <i class="bi bi-grid-1x2-fill me-2"></i><span>Dashboard</span>
             </a>
-        
+
             <a href="" class="btn w-100 text-start pe-4 mb-2">
-                <i class="bi bi-people me-2"></i><span>Customer</span>
-            </a>
-        
-            <a href="" class="btn w-100 text-start pe-4 mb-2">
-                <i class="bi bi-cart2 me-2"></i><span>Orders</span>
-            </a>
-        
-            <a href="" class="btn w-100 text-start pe-4 mb-2">
-                <i class="bi bi-truck-flatbed me-2"></i><span>Providers</span>
+                <i class="bi bi-briefcase me-2"></i><span>Staffs</span>
             </a>
         
             <a href="" class="btn w-100 text-start pe-4 mb-2">
@@ -92,23 +84,66 @@
             </a>
 
     </div>
+
+    <!-- navbar for mobile -->
+    <nav class="navbar bg-warning d-lg-none">
+        <div class="container-fluid">
+            <a href="#navbarmobile" data-bs-toggle="offcanvas"><i class="bi bi-list navbar-brand"></i></a>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarmobile">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">External & Business Affairs</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <a href="#" class="btn btn-warning w-100 text-start pe-4 mb-2 disabled opacity-100">
+                <i class="bi bi-grid-1x2-fill me-2"></i><span>Dashboard</span>
+            </a>
+
+            <a href="" class="btn w-100 text-start pe-4 mb-2">
+                <i class="bi bi-briefcase me-2"></i><span>Staffs</span>
+            </a>
+        
+            <a href="" class="btn w-100 text-start pe-4 mb-2">
+                <i class="bi bi-bag me-2"></i><span>Sales</span>
+            </a>
+        
+            <a href="" class="btn w-100 text-start pe-4 mb-2">
+                <i class="bi bi-box-seam me-2"></i><span>Inventory</span>
+            </a>
+        
+            <a href="" class="btn w-100 text-start pe-4 mb-2">
+                <i class="bi bi-grid me-2"></i><span>Category</span>
+            </a>
+
+            <a href="" class="btn w-100 text-start pe-4 mb-2">
+                <i class="bi bi-gear me-2"></i><span>Settings</span>
+            </a>
+            
+            <a href="../index.php" class="btn w-100 text-start pe-4">
+                <i class="bi bi-box-arrow-right me-2"></i><span>Logout</span>
+            </a>
+        </div>
+    </div>
     
     <!-- Content here -->
-    <div class="flex-grow-1 mx-3">
-        <div class="mt-3 mb-2 d-flex justify-content-between">
+    <div class="flex-grow-1 mx-3 flex-lg-row flex-column">
+        <div class="mt-3 mb-2 d-flex justify-content-between flex-column flex-lg-row">
             <h5 class="fw-normal">Dashboard <span class="text-secondary ms-1">/</span></h5>
-            <div class="card rounded small bg-black text-white px-3 py-2"><span>May 8, 2025 | <b>1:44PM</b></span></div>
+            <div class="card rounded small bg-black text-white px-3 py-2 text-center"><span>May 8, 2025 | <b>1:44PM</b></span></div>
         </div>
 
         <h1 class="fw-bold">WELCOME <span class="text-success">ADMIN</span>!</h1>
         <h5 class="text-secondary">Truth • Excellence • Service</h5>
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-between flex-lg-row flex-column">
             <p>Daily Updates</p>
             <p class="text-secondary">Refresh Data: <i class="bi bi-arrow-repeat btn" role="button"></i></p>
         </div>
         
         <!-- Cards -->
-        <div class="d-flex gap-3">
+        <div class="d-flex gap-3 flex-lg-row flex-column">
             <div class="card rounded px-5 pt-5 w-100 position-relative">
                 <i class="bi bi-bag align-self-end position-absolute top-0 end-0 h5 mx-3 mt-2 p-1 bg-secondary-subtle rounded"></i> 
                 <div class="text-center text-secondary">
