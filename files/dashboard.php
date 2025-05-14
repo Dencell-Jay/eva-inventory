@@ -59,31 +59,31 @@
                 <i class="bi bi-grid-1x2-fill me-2"></i><span>Dashboard</span>
             </a>
         
-            <a href="customer.php" class="btn w-100 text-start pe-4 mb-2">
+            <a href="" class="btn w-100 text-start pe-4 mb-2">
                 <i class="bi bi-people me-2"></i><span>Customer</span>
             </a>
         
-            <a href="orders.php" class="btn w-100 text-start pe-4 mb-2">
+            <a href="" class="btn w-100 text-start pe-4 mb-2">
                 <i class="bi bi-cart2 me-2"></i><span>Orders</span>
             </a>
         
-            <a href="providers.php" class="btn w-100 text-start pe-4 mb-2">
+            <a href="" class="btn w-100 text-start pe-4 mb-2">
                 <i class="bi bi-truck-flatbed me-2"></i><span>Providers</span>
             </a>
         
-            <a href="sales.php" class="btn w-100 text-start pe-4 mb-2">
+            <a href="" class="btn w-100 text-start pe-4 mb-2">
                 <i class="bi bi-bag me-2"></i><span>Sales</span>
             </a>
         
-            <a href="inventory.php" class="btn w-100 text-start pe-4 mb-2">
+            <a href="" class="btn w-100 text-start pe-4 mb-2">
                 <i class="bi bi-box-seam me-2"></i><span>Inventory</span>
             </a>
         
-            <a href="category.php" class="btn w-100 text-start pe-4 mb-2">
+            <a href="" class="btn w-100 text-start pe-4 mb-2">
                 <i class="bi bi-grid me-2"></i><span>Category</span>
             </a>
 
-            <a href="settings.php" class="btn w-100 text-start pe-4 mb-2">
+            <a href="" class="btn w-100 text-start pe-4 mb-2">
                 <i class="bi bi-gear me-2"></i><span>Settings</span>
             </a>
             
