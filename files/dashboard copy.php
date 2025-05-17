@@ -143,45 +143,6 @@
             <h5 class="text-secondary">Truth • Excellence • Service</h5>
             <p class="text-secondary">Refresh Data: <i class="bi bi-arrow-repeat btn" role="button"></i></p>
         </div>
-        
-        <!-- Cards -->
-        <div class="d-flex gap-3 flex-lg-row flex-column">
-            <div class="card rounded px-5 pt-5 w-100 position-relative">
-                <i class="bi bi-bag align-self-end position-absolute top-0 end-0 h5 mx-3 mt-2 p-1 bg-secondary-subtle rounded"></i> 
-                <div class="text-center text-secondary">
-                    <h3>₱ <span class="text-success">800</span><span class="h6">.00</span></h3>
-                    <p>Total Daily sales</p>
-                </div>
-            </div>
-
-            <div class="card rounded px-5 pt-5 w-100">
-                <i class="bi bi-bag align-self-end position-absolute top-0 end-0 h5 mx-3 mt-2 p-1 bg-secondary-subtle rounded"></i> 
-                <div class="text-center text-secondary">
-                    <h3 class="text-success">32</h3>
-                    <p>Total Transaction Count</p>
-                </div>
-            </div>
-
-
-            <div class="card rounded px-5 pt-5 w-100">
-                <i class="bi bi-cart align-self-end position-absolute top-0 end-0 h5 mx-3 mt-2 p-1 bg-secondary-subtle rounded"></i> 
-                <div class="text-center text-secondary">
-                    <h3 class="text-success">5</h3>
-                    <p>Product/s Out of Stock</p>
-                </div>
-            </div>
-
-
-            <div class="card rounded px-5 pt-5 w-100">
-                <i class="bi bi-box-seam align-self-end position-absolute top-0 end-0 h5 mx-3 mt-2 p-1 bg-secondary-subtle rounded"></i> 
-                <div class="text-center text-secondary">
-                    <h3 class="text-danger">32</h3>
-                    <p>Product/s Low on Stock</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Graph -->
 
     </div>
 
