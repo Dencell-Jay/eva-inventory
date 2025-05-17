@@ -20,6 +20,23 @@
         width: 15%;
         transition: width 0.3s;
     }
+
+    @media (min-width: 992px) {
+        .sidebar {
+            position: fixed !important;
+            z-index: 99999;
+        }
+    
+        #main-content{
+            margin-left: 16% !important;
+            transition: width 0.9s;
+        }
+    
+        #main-content.collapsed{
+            margin-left: 90px !important;
+            transition: width 0.9s;
+        }
+    }
     
     .sidebar .cvsu-logo{
         display: block;
@@ -92,7 +109,7 @@
         </div>
     </nav>
 
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarmobile">
+    <div class="offcanvas offcanvas-start position-fixed" tabindex="-1" id="navbarmobile">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title">External & Business Affairs</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -132,7 +149,7 @@
     </div>
     
     <!-- Content here -->
-    <div class="flex-grow-1 mx-3 flex-lg-row flex-column">
+    <div id="main-content" class="flex-grow-1 mx-3 mb-5 flex-lg-row flex-column">
         <div class="mt-3 mb-2 d-flex justify-content-between">
             <h5 class="fw-normal">Dashboard <span class="text-secondary ms-1">/</span></h5>
             <div class="card rounded small bg-black text-white px-3 py-2 text-center mb-2 mb-lg-0"><span>May 8, 2025 | <b>1:44PM</b></span></div>
@@ -145,43 +162,134 @@
         </div>
         
         <!-- Cards -->
-        <div class="d-flex gap-3 flex-lg-row flex-column">
-            <div class="card rounded px-5 pt-5 w-100 position-relative">
-                <i class="bi bi-bag align-self-end position-absolute top-0 end-0 h5 mx-3 mt-2 p-1 bg-secondary-subtle rounded"></i> 
-                <div class="text-center text-secondary">
-                    <h3>₱ <span class="text-success">800</span><span class="h6">.00</span></h3>
-                    <p>Total Daily sales</p>
-                </div>
+        <div class="row flex-lg-nowrap flex-wrap">
+            <div class="col-lg d-flex flex-column pe-lg-0">
+
+                <p class="fw-bold">Daily Sales Activity</p>
+                <div class="d-flex gap-3 flex-lg-row flex-column">
+                    <div class="card rounded px-5 pt-5 w-100 position-relative">
+                        <i class="bi bi-bag align-self-end position-absolute top-0 end-0 h5 mx-3 mt-2 p-1 bg-secondary-subtle rounded"></i> 
+                        <div class="text-center text-secondary">
+                            <h3>₱ <span style="color: #1B651B;">800</span><span class="h6">.00</span></h3>
+                            <p>Total Daily sales</p>
+                        </div>
+                    </div>
+
+                    <div class="card rounded px-5 pt-5 w-100 position-relative">
+                        <i class="bi bi-bag align-self-end position-absolute top-0 end-0 h5 mx-3 mt-2 p-1 bg-secondary-subtle rounded"></i> 
+                        <div class="text-center text-secondary">
+                            <h3 style="color: #1B651B;">32</h3>
+                            <p>Total Transaction Count</p>
+                        </div>
+                    </div>
+
+                </div>  
+            </div>
+            
+            <div class="d-none d-lg-block align-self-stretch" style="width: 1px;">
+                <div class="vr h-100"></div>
             </div>
 
-            <div class="card rounded px-5 pt-5 w-100">
-                <i class="bi bi-bag align-self-end position-absolute top-0 end-0 h5 mx-3 mt-2 p-1 bg-secondary-subtle rounded"></i> 
-                <div class="text-center text-secondary">
-                    <h3 class="text-success">32</h3>
-                    <p>Total Transaction Count</p>
-                </div>
-            </div>
+            <div class="col-lg d-flex flex-column ps-lg-0">
+                <p class="fw-bold">Inventory Overview</p>
+                <div class="d-flex gap-3 flex-lg-row flex-column">
+                    <div class="card rounded px-5 pt-5 w-100 position-relative">
+                        <i class="bi bi-cart align-self-end position-absolute top-0 end-0 h5 mx-3 mt-2 p-1 bg-secondary-subtle rounded"></i> 
+                        <div class="text-center text-secondary">
+                            <h3 style="color: #1B651B;">5</h3>
+                            <p>Product/s Out of Stock</p>
+                        </div>
+                    </div>
 
-
-            <div class="card rounded px-5 pt-5 w-100">
-                <i class="bi bi-cart align-self-end position-absolute top-0 end-0 h5 mx-3 mt-2 p-1 bg-secondary-subtle rounded"></i> 
-                <div class="text-center text-secondary">
-                    <h3 class="text-success">5</h3>
-                    <p>Product/s Out of Stock</p>
-                </div>
-            </div>
-
-
-            <div class="card rounded px-5 pt-5 w-100">
-                <i class="bi bi-box-seam align-self-end position-absolute top-0 end-0 h5 mx-3 mt-2 p-1 bg-secondary-subtle rounded"></i> 
-                <div class="text-center text-secondary">
-                    <h3 class="text-danger">32</h3>
-                    <p>Product/s Low on Stock</p>
+                    <div class="card rounded px-5 pt-5 w-100 position-relative">
+                        <i class="bi bi-box-seam align-self-end position-absolute top-0 end-0 h5 mx-3 mt-2 p-1 bg-secondary-subtle rounded"></i> 
+                        <div class="text-center text-secondary">
+                            <h3 class="text-danger">32</h3>
+                            <p>Product/s Low on Stock</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+            
 
         <!-- Graph -->
+        <div class="d-flex card rounded h-25 w-100 mt-3">
+            <h1 class="text-center mt-2">insert table rahhhh</h1>
+            <h1 class="text-center">insert table rahhhh</h1>
+            <h1 class="text-center">insert table rahhhh</h1>
+        </div>
+
+        <!-- Table and Inventory Summary -->
+        <div class="d-flex gap-3 flex-lg-row flex-column mt-3">
+
+            <div class="card rounded px-5 pt-5 w-100 position-relative">
+                <h4 class="align-self-start position-absolute top-0 start-0 mx-3 mt-2 p-1" style="color: #1B651B;">Recent Sales Transaction</h4>
+                <a href="" class="btn btn-light align-self-end position-absolute top-0 h5 mx-2 mt-2 p-1">See all</a>
+                <i class="bi bi-bag align-self-end position-absolute top-0 end-0 h5 mx-3 mt-2 p-1 bg-secondary-subtle rounded"></i>
+                 
+                <table class="table mt-3">
+                    <thead>
+                        <tr>
+                            <th scope="col">#Sales ID</th>
+                            <th scope="col">Full Name</th>
+                            <th scope="col">Department</th>
+                            <th scope="col">Total (₱)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SO020040525</td>
+                            <td>Mark Villar</td>
+                            <td>DIT</td>
+                            <td>20,000</td>
+                        </tr>
+                        <tr>
+                            <td>SO019040525</td>
+                            <td>Jacob Villar</td>
+                            <td>DAS</td>
+                            <td>30,000</td>
+                        </tr>
+                        <tr>
+                            <td>SO018040525</td>
+                            <td>Larry Villar</td>
+                            <td>PSYCH</td>
+                            <td>50,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="w-50 d-flex flex-lg-column flex-row flex-md-column">
+                <div class="card rounded py-3 mb-1 bg-success bg-gradient">
+                    <h3 class="text-center text-light"><span>Inventory Summary</span></h3>
+                </div>
+
+                <div class="card rounded py-3">
+                    <div class="d-flex justify-content-between mx-3">
+                       <p class="text-secondary">Total Item On Hand<p>
+                       <h4 class="text-success">23332</h4> 
+                    </div>
+                    
+                    <div class="mb-4" style="height: 1px; background-color: black; width: 80%; align-self: center;"></div>
+
+                    <div class="d-flex justify-content-between mx-3">
+                       <p class="text-secondary">Total Category<p>
+                       <h4 class="text-success">32</h4> 
+                    </div>
+
+                    <div class="mb-4" style="height: 1px; background-color: black; width: 80%; align-self: center;"></div>
+
+                    <div class="d-flex justify-content-between mx-3">
+                       <p class="text-secondary">Total Distinct Product<p>
+                       <h4 class="text-success">332</h4> 
+                    </div>
+
+                </div>
+            </div>
+            
+            
+        </div>
 
     </div>
 
@@ -189,14 +297,18 @@
         // Sidebar state saving
         const sidebar = document.getElementById("sidebar");
         const toggleBtn = document.getElementById("toggleButton");
+        const main_content = document.getElementById("main-content");
 
         if (localStorage.getItem("sidebar") === "collapsed") {
             sidebar.classList.add("collapse");
+            main_content.classList.add("collapsed");
             toggleBtn.classList.replace("bi-chevron-double-left", "bi-chevron-double-right");
         }
 
         toggleBtn.addEventListener("click", () => {
             sidebar.classList.toggle("collapse");
+            main_content.classList.toggle("collapsed");
+            
             toggleBtn.classList.toggle("bi-chevron-double-left");
             toggleBtn.classList.toggle("bi-chevron-double-right");
 
