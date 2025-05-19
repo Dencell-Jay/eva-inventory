@@ -29,12 +29,12 @@
     
         #main-content{
             margin-left: 16% !important;
-            transition: width 0.9s;
+            transition: margin-left 0.4s !important;
         }
     
         #main-content.collapsed{
             margin-left: 90px !important;
-            transition: width 0.9s;
+            transition: margin-left 0.4s !important;
         }
     }
     
@@ -59,6 +59,25 @@
         pointer-events: none;
         height: 0;
         overflow: hidden;
+    }
+
+    /* inventory Summary solution  */
+    @media (min-width: 576px) { 
+        #summary {
+            width: 100% !important;
+        }
+    }
+
+    @media (min-width: 768px) {
+        #summary {
+            width: 100% !important;
+        }
+    }
+
+    @media (min-width: 992px) { 
+        #summary {
+            width: 50% !important;
+        }
     }
 
 </style>
@@ -227,45 +246,48 @@
                 <h4 class="align-self-start position-absolute top-0 start-0 mx-3 mt-2 p-1" style="color: #1B651B;">Recent Sales Transaction</h4>
                 <a href="" class="btn btn-light align-self-end position-absolute top-0 h5 mx-2 mt-2 p-1">See all</a>
                 <i class="bi bi-bag align-self-end position-absolute top-0 end-0 h5 mx-3 mt-2 p-1 bg-secondary-subtle rounded"></i>
-                 
-                <table class="table mt-3">
-                    <thead>
-                        <tr>
-                            <th scope="col">#Sales ID</th>
-                            <th scope="col">Full Name</th>
-                            <th scope="col">Department</th>
-                            <th scope="col">Total (₱)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>SO020040525</td>
-                            <td>Mark Villar</td>
-                            <td>DIT</td>
-                            <td>20,000</td>
-                        </tr>
-                        <tr>
-                            <td>SO019040525</td>
-                            <td>Jacob Villar</td>
-                            <td>DAS</td>
-                            <td>30,000</td>
-                        </tr>
-                        <tr>
-                            <td>SO018040525</td>
-                            <td>Larry Villar</td>
-                            <td>PSYCH</td>
-                            <td>50,000</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                
+                <div class="table-responsive mt-3">
+                    <table class="table ">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#Sales ID</th>
+                                    <th scope="col">Full Name</th>
+                                    <th scope="col">Department</th>
+                                    <th scope="col">Total (₱)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>SO020040525</td>
+                                    <td>Mark Villar</td>
+                                    <td>DIT</td>
+                                    <td>20,000</td>
+                                </tr>
+                                <tr>
+                                    <td>SO019040525</td>
+                                    <td>Jacob Villar</td>
+                                    <td>DAS</td>
+                                    <td>30,000</td>
+                                </tr>
+                                <tr>
+                                    <td>SO018040525</td>
+                                    <td>Larry Villar</td>
+                                    <td>PSYCH</td>
+                                    <td>50,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
-            <div class="w-50 d-flex flex-lg-column flex-row flex-md-column">
+
+            <div id="summary" class=" d-flex flex-lg-column flex-column flex-md-column flex-lg-row">
                 <div class="card rounded py-3 mb-1 bg-success bg-gradient">
                     <h3 class="text-center text-light"><span>Inventory Summary</span></h3>
                 </div>
 
-                <div class="card rounded py-3">
+                <div class="card rounded py-3 flex-column">
                     <div class="d-flex justify-content-between mx-3">
                        <p class="text-secondary">Total Item On Hand<p>
                        <h4 class="text-success">23332</h4> 
